@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a7d69e2e-aa92-4de7-8b29-e32c3cbe02d5",
+        "name": "Kaf",
+        "song": [
+            "Song-1",
+            "Song-2"
+        ],
+        "img_path": "/public/kaf.jpg"
+    },
+    {
+        "id": "c1192419-dc6a-49a2-8a78-0cdea51c9a2e",
+        "name": "Rim",
+        "song": [
+            "Song-1",
+            "Song-2"
+        ],
+        "img_path": "/public/rim.png"
+    },
+    {
+        "id": "42c6ee3a-3eac-41e2-b15b-6820459ca1e0",
+        "name": "Harusaruhi",
+        "song": [
+            "Song-1",
+            "Song-2"
+        ],
+        "img_path": "/public/harusaruhi.jpg"
+    },
+    {
+        "id": "a1b22ea0-a67c-47dd-8a93-a9f816b6492e",
+        "name": "Koko",
+        "song": [
+            "Song-1",
+            "Song-2"
+        ],
+        "img_path": "/public/koko.jpg"
+    },
+    {
+        "id": "0db91046-34b5-443c-b7ef-45e18328279c",
+        "name": "Isekaijoucho",
+        "song": [
+            "Song-1",
+            "Song-2"
+        ],
+        "img_path": "/public/isekaijoucho.jpg"
+    }
+]

@@ -1,0 +1,19 @@
+POST http://localhost:3000/singer/add
+Content-Type: multipart/form-data; boundary=---------------------------9051914041544843365972754266
+
+-----------------------------9051914041544843365972754266
+Content-Disposition: form-data; name="jsonData"
+
+{
+    "name":"hei-2",
+    "song":[
+        "Song-Gen-1",
+        "Song-Gen-2"
+    ]
+}
+-----------------------------9051914041544843365972754266
+Content-Disposition: form-data; name="singer_img"; filename="test_image.png"
+Content-Type: image/png
+
+< ./test_image.png
+-----------------------------9051914041544843365972754266--
