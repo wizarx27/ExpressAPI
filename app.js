@@ -3,7 +3,7 @@ import fs from "fs"
 import multer from "multer"
 
 const app = express()
-const port = 3000
+const port = 3001
 import {v4 as uuidv4} from 'uuid';
 const dataPath = "data.json"
 const upload = multer()
@@ -20,7 +20,10 @@ app.get('/singer', (req, res) => {
 
 app.get('/singer/:singerId', (req, res) => {
     const { singerId } = req.params
-    res.send(singerId)
+    const dataRaw = fs.readFileSync(dataPath,'utf-8')
+    const oldData = JSON.parse(dataRaw)
+    let theData = oldData.find((item)=>item.id === singerId)
+    res.status(200).send(theData)
 })
 
 app.post('/singer/add',upload.single("singer_img"),(req,res)=>{
