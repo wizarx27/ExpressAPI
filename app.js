@@ -14,7 +14,8 @@ app.use(express.json())
 
 app.get('/singer', (req, res) => {
     const data = fs.readFileSync(dataPath,'utf-8')
-    res.set("Content-type","application/json")
+    res.set({"Content-type":"application/json","Access-Control-Allow-Origin":"*"})
+    
     res.status(200).send(JSON.parse(data))
 })
 
@@ -23,6 +24,7 @@ app.get('/singer/:singerId', (req, res) => {
     const dataRaw = fs.readFileSync(dataPath,'utf-8')
     const oldData = JSON.parse(dataRaw)
     let theData = oldData.find((item)=>item.id === singerId)
+    res.set({"Content-type":"application/json","Access-Control-Allow-Origin":"*"})
     res.status(200).send(theData)
 })
 
@@ -39,6 +41,7 @@ app.post('/singer/add',upload.single("singer_img"),(req,res)=>{
     fs.writeFileSync(img_path,req.file.buffer)
     oldData.push(newData)
     fs.writeFileSync(dataPath,JSON.stringify(oldData,null,4))
+    res.set({"Content-type":"application/json","Access-Control-Allow-Origin":"*"})
     res.send(oldData)
 })
 

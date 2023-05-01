@@ -6,7 +6,7 @@
             "Song-1",
             "Song-2"
         ],
-        "img_path": "/public/kaf.jpg"
+        "img_path": "public/kaf.jpg"
     },
     {
         "id": "c1192419-dc6a-49a2-8a78-0cdea51c9a2e",
@@ -15,7 +15,7 @@
             "Song-1",
             "Song-2"
         ],
-        "img_path": "/public/rim.png"
+        "img_path": "public/rim.png"
     },
     {
         "id": "42c6ee3a-3eac-41e2-b15b-6820459ca1e0",
@@ -24,7 +24,7 @@
             "Song-1",
             "Song-2"
         ],
-        "img_path": "/public/harusaruhi.jpg"
+        "img_path": "public/harusaruhi.jpg"
     },
     {
         "id": "a1b22ea0-a67c-47dd-8a93-a9f816b6492e",
@@ -33,7 +33,7 @@
             "Song-1",
             "Song-2"
         ],
-        "img_path": "/public/koko.jpg"
+        "img_path": "public/koko.jpg"
     },
     {
         "id": "0db91046-34b5-443c-b7ef-45e18328279c",
@@ -42,6 +42,6 @@
             "Song-1",
             "Song-2"
         ],
-        "img_path": "/public/isekaijoucho.jpg"
+        "img_path": "public/isekaijoucho.jpg"
     }
 ]
